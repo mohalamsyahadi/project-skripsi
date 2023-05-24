@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="menghitung_preprosesing.php">
+			<label for="filePembanding">File Pembanding </label>
+			<input type="text" name="filePembanding" id="filePembanding" value="" />
+			<br />
+			<label for="fileDibanding01">File Dibanding 01 </label>
+			<input type="text" name="fileDibanding[]" id="fileDibanding01" value="" />
+			<br />
+			<label for="fileDibanding02">File Dibanding 02 </label>
+			<input type="text" name="fileDibanding[]" id="fileDibanding02" value="" />
+			<br />
+			<label for="fileDibanding03">File Dibanding 03 </label>
+			<input type="text" name="fileDibanding[]" id="fileDibanding03" value="" />
+			<br />
+			<input type="checkbox" name="preprosesing[]" id="filtering" value="filtering" />
+			<label for="filtering">filtering</label>
+
+			<input type="checkbox" name="preprosesing[]" id="tokenizing" value="tokenizing" />
+			<label for="tokenizing">tokenizing</label>
+
+			<input type="checkbox" name="preprosesing[]" id="casefolding" value="casefolding" />
+			<label for="casefolding">casefolding</label>
+
+			<input type="submit" value="check" />
+		</form>
+	</body>
+</html>
